@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            /* font-family: "Times New Roman", Georgia, serif; */
+            font-family: "Karma", sans-serif;
+            margin: 0;
+            padding: 10%;
+            box-sizing: border-box;
+        }
+
+        h2{
+            font-family: "Karma", sans-serif;
+            color: rgb(78, 78, 78);
+        }
+        
+        .navbar{
+            display: flex;
+            gap: 30%;
+            background-color: white;
+            padding: 15px;
+            position: fixed;
+            width: 99vw;
+            height: 25px;
+            top: 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+
+        .section{
+            display: grid;
+            row-gap: 6px;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        img{
+            height: 50vh;
+        }
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 60px;
+        }
+
+        .i{
+            color: black;
+            height: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        button:hover{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        .i:hover{
+            color: white;
+        }
+
+        .content{
+            padding: 2%;
+            text-align: center;
+        }
+
+        .pic{
+            height: 70vh;
+        }
+
+        hr{
+            border: 1px solid rgb(237, 236, 236);
+            margin: 20px;
+
+        }
+        .last{
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: auto auto auto;
+            margin: 50px;
+        }
+        .small{
+            height: 50px;
+        }
+
+        .word{
+            text-decoration: none;
+            color: white;
+            background-color: gray;
+            width: 50px;
+            margin: 3px;
+        }
+
+        .foot{
+            display: grid;
+        }
+        .anu{
+            height: 8vh;
+            width: 5vw;
+        }
+        .small1{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .s{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+        <a href="#My Food">My Food</a>
+        <a href="#Mail"> Mail</a>
+    </div>
+    
+
+    <div class="section">
+        <div>
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div>
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        
+        <div>
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="">
+            <h2>Cherries, interrupted</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+
+                What else?</p>
+        </div>
+
+        <div>
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+        <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <div>
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="">
+            <h2>All I Need Is a Popsicle</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div>
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="">
+            <h2>Salmon For Your Skin</h2>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div>
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h2>The Perfect Sandwich, A Real Classic</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div>
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="">
+            <h2>Le French</h2>
+            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+</div>
+        <div class="icon">
+            <a href="#" class="i"><i class="fa-solid fa-angles-left"></i></a>
+            <button><a href="#" class="i">1</a></button>
+            <button><a href="#" class="i">2</a></button>
+            <button><a href="#" class="i">3</a></button>
+            <button><a href="#" class="i">4</a></button>
+            <a href="#" class="i"><i class="fa-solid fa-angles-right"></i></a>
+        </div>
+
+        
+        <hr>
+        <div class="content">
+            <h1>About Me, The Food Man</h1>
+
+            <img class="pic" src="https://www.w3schools.com/w3images/chef.jpg" height="40vh" alt="">
+            <h2>I am Who I Am!</h2>
+            <h3>With Passion For Real, Good Food</h3>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+        <hr>
+
+        <footer class="last">
+            <div class="foot">
+                <h2>FOOTER</h2>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                    <br> condimentum, 
+                    porta lectus vitae, ultricies congue
+                    <br> gravida diam non fringilla. <br><br> Powered by w3.css</p>
+                
+            </div>
+
+            <div>
+                <h2>BLOG POSTS</h2>
+
+            <div class="small1">
+                <img class="anu" src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+                <p class="s">Lorem<br> Sed mattis nunc </p>
+            </div>
+
+             <hr>
+             
+                <div class="small1">
+                <img class="anu" src="https://www.w3schools.com/w3images/gondol.jpg" alt="">
+                <p class="s">Ipsum<br> Praes tinci  sed</p>
+            </div>
+        </div>
+        
+            <div>
+                <h2>POPULAR TAGS</h2>
+                <span><a href="#" class="word">Travel</a></span>
+                <span><a href="#" class="word">New York</a></span>
+                <span><a href="#" class="word">Dinner</a></span>
+                <span><a href="#" class="word">Salmon</a></span>
+                <span><a href="#" class="word">France</a></span>
+                <span><a href="#" class="word">Drinks</a></span><br><br>
+                <span><a href="#" class="word">Ideas</a></span>
+                <span><a href="#" class="word">Flavors</a></span>
+                <span><a href="#" class="word">Cuisine</a></span>
+                <span><a href="#" class="word">Chicken</a></span>
+                <span><a href="#" class="word">Dressing</a></span>
+                <span><a href="#" class="word">Fried</a></span><br><br>
+                <span><a href="#" class="word">Fish</a></span>
+                <span><a href="#" class="word">Duck</a></span>
+            </div>
+            
+        </footer>
+</body>
+</html>
